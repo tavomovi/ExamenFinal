@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="ExamenFinal.Capa_Presentacion.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet1.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form2" runat="server">
+        <div class="menu1">
+            <div class="menu1">
+                <input type="checkbox" id="toggle" />
+                <label id="show-menu1" for="toggle">
+
+                    <div class="btn1">
+                        <i class="material-icons md-36 toggleBtn menuBtn1">menu</i>
+                        <i class="material-icons md-36 toggleBtn closeBtn1">close</i>
+                    </div>
+
+                    <div class="btn1">
+                        <i class="material-icons md-36">monetization_on</i>
+                    </div>
+
+                    <div class="btn1">
+                        <i class="material-icons md-36">home</i>
+                    </div>
+
+                    <div class="btn1">
+                        <a href="../Agente/Agente_Vista.aspx" class="nav-link">
+                            <i class="material-icons md-36">person</i>
+                        </a>
+                    </div>
+
+                    <div class="btn1">
+                        <a href="../Cliente/Clientes_View.aspx" class="nav-link">
+                            <i class="material-icons md-36">supervisor_account</i>
+                        </a>
+                    </div>
+
+                    <div class="btn1">
+                        <a href="../Login/Login.aspx" class="nav-link">
+                            <i class="material-icons md-36">exit_to_app</i>
+                        </a>
+                    </div>
+
+                </label>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
